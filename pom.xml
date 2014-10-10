@@ -38,39 +38,12 @@
         <cdh5.hadoop.version>2.3.0-cdh${cdh5.version}</cdh5.hadoop.version>
     </properties>
 
-    <profiles>
-	<profile>
-	    <id>cdh4</id>
-	    <activation>
-      		<activeByDefault>true</activeByDefault>
-    	    </activation>
-	    <properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<serde.shim>json-serde-cdh4-shim</serde.shim>
-		<cdh.version>${cdh4.version}</cdh.version>
-		<cdh.hive.version>${cdh4.hive.version}</cdh.hive.version>
-		<cdh.hadoop.version>${cdh4.hadoop.version}</cdh.hadoop.version>
-		<cdh.shim>cdh4</cdh.shim>
-	    </properties>
-	</profile>
-	<profile>
-	    <id>cdh5</id>
-	    <properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<serde.shim>json-serde-cdh5-shim</serde.shim>
-		<cdh.version>${cdh5.version}</cdh.version>
-		<cdh.hive.version>${cdh5.hive.version}</cdh.hive.version>
-		<cdh.hadoop.version>${cdh5.hadoop.version}</cdh.hadoop.version>
-		<cdh.shim>cdh5</cdh.shim>
-	    </properties>
-	</profile>
-    </profiles>
-
     <modules>
 	<module>json</module>
 	<module>json-serde-cdh4-shim</module>
 	<module>json-serde-cdh5-shim</module>
-	<module>json-serde</module>
+	<module>json-serde-cdh4</module>
+	<module>json-serde-cdh5</module>
     </modules>
 
     <repositories>
