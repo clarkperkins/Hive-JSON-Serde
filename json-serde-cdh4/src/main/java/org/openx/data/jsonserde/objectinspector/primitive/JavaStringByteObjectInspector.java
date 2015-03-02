@@ -49,6 +49,11 @@ public  class JavaStringByteObjectInspector
     }
 
     @Override
+    public Object getPrimitiveJavaObject(Object o) {
+        return get(o);
+    }
+
+    @Override
     public Object create(byte value) {
         return (value);
     }
