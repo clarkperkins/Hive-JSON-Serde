@@ -50,6 +50,11 @@ public class JavaStringShortObjectInspector
     }
 
     @Override
+    public Object getPrimitiveJavaObject(Object o) {
+        return get(o);
+    }
+
+    @Override
     public Object create(short value) {
         return value;
     }

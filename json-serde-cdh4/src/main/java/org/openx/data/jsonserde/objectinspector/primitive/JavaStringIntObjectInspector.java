@@ -49,6 +49,11 @@ public class JavaStringIntObjectInspector
     }
 
     @Override
+    public Object getPrimitiveJavaObject(Object o) {
+        return get(o);
+    }
+
+    @Override
     public Object create(int value) {
         return value;
     }
